@@ -1,0 +1,5 @@
+= Pump Comparison (image)
+
+image::https://media.discordapp.net/attachments/776217889551679538/802659153557454848/unknown.png[link=https://media.discordapp.net/attachments/776217889551679538/802659153557454848/unknown.png]
+
+You can also view a text version xref:pump-comparison-text.adoc[here].

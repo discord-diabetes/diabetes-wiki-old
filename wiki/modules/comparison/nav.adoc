@@ -1,5 +1,5 @@
 * Comparisons
-** xref:cgm-comparison.adoc[]
-*** xref:cgm-comparison-text.adoc[Text version]
-** xref:pump-comparison.adoc[]
-*** xref:pump-comparison-text.adoc[Text version]
+** xref:cgm-comparison-text.adoc[]
+*** xref:cgm-comparison-image.adoc[Graphical version]
+** xref:pump-comparison-text.adoc[]
+*** xref:pump-comparison-image.adoc[Graphical version]

@@ -1,4 +1,6 @@
-= Pump Comparison (text)
+= Pump Comparison
+// the macros with a hyphen at the end are because of asciidoctor being out of date in antora i think. without them, the footnotes will be duplicated.
+// this is very messy. i'll figure out a way to clean it up later.
 :fn-1: footnote:1[100u per mL concentration insulin]
 :fn-1-: footnote:1[]
 
@@ -120,3 +122,5 @@ PDM: No
 | Pods: IPX8 +
 PDM: No
 |===
+
+You can also view a graphical version xref:pump-comparison-image.adoc[here].

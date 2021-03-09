@@ -1,5 +1,5 @@
-= CGM Comparison
+= CGM Comparison (image)
 
 image::https://media.discordapp.net/attachments/776217889551679538/802409339725283338/unknown.png[link=https://media.discordapp.net/attachments/776217889551679538/802409339725283338/unknown.png]
 
-You can also view a text version link:cgm-comparison-text[here].
+You can also view a text version xref:cgm-comparison-text.adoc[here].
