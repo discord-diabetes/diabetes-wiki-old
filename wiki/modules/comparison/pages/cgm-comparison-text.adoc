@@ -1,5 +1,5 @@
 = CGM Comparison (text)
-:fn-1: footnoteref:[1,Freestyle Libres are classified as Flash Glucose Sensors (FGM), rather than Continuous Glucose Sensors (CGM). Up to 8 hours of data can be stored at a time between scanning. FGM's do not push data to a receiver without modifications to convert them into a CGM.]
+:fn-1: footnote:1[Freestyle Libres are classified as Flash Glucose Sensors (FGM), rather than Continuous Glucose Sensors (CGM). Up to 8 hours of data can be stored at a time between scanning. FGM's do not push data to a receiver without modifications to convert them into a CGM.]
 
 .Available CGMs
 [%autowidth]
