@@ -1,8 +1,15 @@
 = Pump Comparison (text)
 :fn-1: footnote:1[100u per mL concentration insulin]
+:fn-1-: footnote:1[]
+
 :fn-2: footnote:2[CIQ approved in the US and Canada as of Jan. 2021, and is rolling out globally. Other Tandem pumps come with Basal IQ (BIQ). Tandem plans to integrate with Dexcom G7 and Libre 3 CGM's.]
+:fn-2-: footnote:2[]
+
 :fn-3: footnote:3[IPX8 is waterproof, IPX7 is water-resistant]
+:fn-3-: footnote:3[]
+
 :fn-4: footnote:4[Medtronic 780G received CE-mark Approval in Europe in June 2020 and limited release in Fall 2020. Pending FDA approval in the US with expected Fall 2021 release.]
+:fn-4-: footnote:4[]
 
 [%autowidth]
 |===
@@ -12,7 +19,7 @@
 | 3 mL / 300u
 | 3.13 x 2 x 0.6 in (79.5 x 50.8 x 15.2 mm)
 | Dexcom G6{fn-2} (yes)
-| Integrated (CIQ{fn-2} with automatic corrections)
+| Integrated (CIQ{fn-2-} with automatic corrections)
 | Touchscreen Buttons Phone App (display)
 | Yes
 | Rechargeable
