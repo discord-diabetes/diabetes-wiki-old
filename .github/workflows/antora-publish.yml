@@ -10,6 +10,7 @@ jobs:
         uses: mvasigh/dispatch-action@main
         with:
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-          repo: p5nbtgip0r.github.io
-          owner: p5nbTgip0r
+          # this will need to be changed if the antora repository is not under gh pages
+          repo: ${{ github.repository_owner }}.github.io
+          owner: ${{ github.repository_owner }}
           event_type: build_publish
