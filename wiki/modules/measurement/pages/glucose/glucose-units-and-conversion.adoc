@@ -181,7 +181,7 @@ This preciseness was traded for ease of understanding as it's not necessary for 
 === Why don't we use the precise conversion factor for most calculations?
 
 The percentage difference between the simplified factor (stem:[18]) and the exact/precise factor (stem:[18.0156]) is stem:[0.0866291\%], which is an extremely negligible loss in precision.
-In most cases, someone who needs to convert a blood glucose value will not be dealing with such a large value that the precision loss with the simplified factor won't be critical.
+In most cases, someone who needs to convert a blood glucose value will not be dealing with such a large value that the precision loss with the simplified factor would be critical.
 As the blood glucose value you're converting from increases, the difference between the simplified and precise factors increases linearly.
 
 You can use https://www.desmos.com/calculator/7ct6n1ufwq[this Desmos calculator] to see for yourself.
