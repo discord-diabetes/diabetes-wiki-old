@@ -1,0 +1,126 @@
+= Pump Comparison
+// the macros with a hyphen at the end are because of asciidoctor being out of date in antora i think. without them, the footnotes will be duplicated.
+// this is very messy. i'll figure out a way to clean it up later.
+:fn-1: footnote:1[100u per mL concentration insulin]
+:fn-1-: footnote:1[]
+
+:fn-2: footnote:2[CIQ approved in the US and Canada as of Jan. 2021, and is rolling out globally. Other Tandem pumps come with Basal IQ (BIQ). Tandem plans to integrate with Dexcom G7 and Libre 3 CGM's.]
+:fn-2-: footnote:2[]
+
+:fn-3: footnote:3[IPX8 is waterproof, IPX7 is water-resistant]
+:fn-3-: footnote:3[]
+
+:fn-4: footnote:4[Medtronic 780G received CE-mark Approval in Europe in June 2020 and limited release in Fall 2020. Pending FDA approval in the US with expected Fall 2021 release.]
+:fn-4-: footnote:4[]
+
+[%autowidth]
+|===
+| Pump | Reservoir Size{fn-1} | Dimensions | Integrated CGM (auto-populate to bolus calculator) | Loop | User Interface | Quick Bolus | Battery | Water Resistant{fn-3}
+
+| *Tandem t:slim X2*
+| 3 mL / 300u
+| 3.13 x 2 x 0.6 in (79.5 x 50.8 x 15.2 mm)
+| Dexcom G6{fn-2} (yes)
+| Integrated (CIQ{fn-2-} with automatic corrections)
+| Touchscreen Buttons Phone App (display)
+| Yes
+| Rechargeable
+| Yes, IPX7
+
+| *Medtronic 780G{fn-4}*
+| 3 mL / 300u
+| 2.1 x 3.78 x 0.96 in (53.6 x 96 x 24.5 mm)
+| Guardian (yes)
+| Integrated (Auto-Mode with automatic corrections)
+| Color Screen Buttons Phone App (display)
+| Yes
+| AA
+| Yes, IPX8
+
+| *Medtronic 770G*
+| 3 mL / 300u
+| 2.1 x 3.78 x 0.96 in (53.6 x 96 x 24.5 mm)
+| Guardian (no)
+| Integrated (Auto-Mode)
+| Color Screen Buttons
+| Yes
+| AA
+| Yes, IPX8
+
+| *Medtronic 670G*
+| 3 mL / 300u
+| 2.1 x 3.8 x 1 in (54 x 97 x 25 mm)
+| Guardian (no)
+| Integrated (Auto-Mode)
+| Color Screen Buttons
+| Yes
+| AA
+| Yes, IPX8
+
+| *Medtronic 630G/640G*
+| 3 mL / 300u
+| 3.8 x 2.1 x 1 in (96 x 53 x 25 mm)
+| Guardian
+| Integrated (Auto-Mode)
+| Color Screen Buttons
+| Yes
+| AA
+| Yes, IPX8
+
+| *Medtronic Paradigm*
+| 1.8 mL / 180u 3 mL / 300u
+| 2 x 3.7 x 0.82 in. (50.8 x 94 x 20.8 mm)
+| Enlite
+| DIY
+| Screen Buttons
+| Yes
+| AAA
+| Yes, IPX7
+
+| *Roche AccuCheck Combo*
+| 3.15 mL / 315u
+| 3.2 x 2.2 x 0.8 in (81.3 x 55.9 x 20.3 mm)
+| No
+| DIY
+| Screen Buttons
+| Yes
+| AAA
+| Yes, IPX8
+
+| *Dana RS*
+| 3 mL / 300u
+| 3.1 x 1.8 x 0.75 in (79 x 45 x 19 mm)
+| No
+| DIY
+| Screen Buttons
+| Yes
+| 3.6V Lithium
+| Yes, IPX8
+
+| *OmniPod Eros*
+| 2 mL / 200u
+| 2.4 x 1.6 x 0.71 in (61 x 41 x 18 mm)
+| No
+| DIY
+| PDM, +
+Buttons
+| No
+| AAA (PDM)
+| Pods: IPX8 +
+PDM: No
+
+| *OmniPod Dash*
+| 2 mL / 200u
+| 1.53 x 2.05 x 0.57 in (39 x 52 x 14.5 mm)
+| Pending +
+(Dexcom G6)
+| Pending +
+(OmniPod Horizon)
+| PDM, Touchscreen
+| No
+| Rechargeable (PDM)
+| Pods: IPX8 +
+PDM: No
+|===
+
+You can also view a graphical version xref:pump-comparison-image.adoc[here].

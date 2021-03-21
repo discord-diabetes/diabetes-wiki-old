@@ -1,0 +1,111 @@
+= Precise Glucose Measurement
+:stem: latexmath
+
+== SI Prefixes
+I would recommend looking at the following SI prefixes if you aren't familiar with them already, as they are used extensively throughout this explanation.
+I try my best to keep the explanation simple, but it might be handy to refer back to this chart throughout the reading:
+
+|===
+| Prefix | Decimal Factor | Power Factor
+
+| NOTHING-
+| 1
+| stem:[10^0]
+
+| deci-
+| 0.1
+| stem:[10^{-1}]
+
+| milli-
+| 0.001
+| stem:[10^{-3}]
+|===
+
+== What are moles?
+
+Put simply: https://en.wikipedia.org/wiki/Mole_(unit)[a mole] is a fixed number of particles.
+What that number is, and the history of the mole is beyond the scope of this explanation, but just think of a mole similarly to how the word 'dozen' represents a number.
+"I have a dozen eggs", and "I have one mole of hydrogen" are similar: they're saying you have X number of Y thing.
+This fixed number is not arbitrary, it was chosen to allow us to convert between atomic mass (explained in the next section) and molar mass (measured in moles) with relative ease.
+
+== What is glucose?
+
+Glucose is a molecule.
+Molecules are made up of two or more atoms.
+Glucose has a molecular formula of C~6~H~12~O~6~, which means that it is made up of the following:
+
+* 6 carbon atoms
+* 12 hydrogen atoms
+* 6 oxygen atoms
+
+If we look at a https://ptable.com/[periodic table], you will see a number at the bottom of each element's box.
+This is an https://en.wikipedia.org/wiki/Atomic_mass[atomic mass].
+The atomic mass is usually measured in https://en.wikipedia.org/wiki/Dalton_(unit)[daltons] (symbolised with stem:[u]).
+
+If we calculate the total weight, we get stem:[(12.011 \times 6) + (1.008 \times 12) + (15.999 \times 6) = 180.156u].
+The mole was defined so that 1 dalton is (for most cases) equal to grams per mole, so we can redefine the value of stem:[180.156 \space daltons] to stem:[180.156 \space grams/mole].
+
+The total weight of glucose is therefore stem:[180.156 \space grams/mole].
+That may have been confusing, but what you need to take away is the total weight we calculated means that stem:[180.156] grams of a glucose molecule is equal to stem:[1] mole, allowing us to convert between grams (weight) and moles (fixed number of particles).
+
+== How do we actually convert?
+
+I will be converting from mg/dL.
+The mg/dL measurement can be converted directly from milli-grams of glucose to milli-moles of glucose because mmol/L uses the same SI prefix and we know that converting grams to and from moles has a linear relationship (thanks to our grams/mole value found earlier), therefore no conversion is necessary at this step.
+
+The last remaining difference between mg/dL and mmol/L is the volume measurement (liter/litre):
+
+mg/dL uses deci-liters which means that stem:[1 \space mg/dL = 0.1 \space mg/L].
+
+You can convert from deci-liters to liters by multiplying the mg/dL value by the power factor for 'deci-' in the chart above: +
+stem:[1 \space mg/dL = (1 \times 10^{-1}) \space mg/L = 0.1 \space mg/L]
+
+You can do the opposite and convert from liters to deci-liters by dividing instead of multiplying: +
+stem:[0.1 \space mg/L = (0.1 \div 10^{-1}) \space mg/dL = 1 \space mg/dL]
+
+Now that we know how to convert the liters into deciliters and vice-versa, we can apply it to mg/dL and mmol/L. +
+Remember, we don't need to convert 'mg' and 'mmol' since they're using the same base prefix.
+
+For now, I'm going to do two things to help make it easier to see what's happening:
+
+* I'll use a larger value to convert from
+* I will substitute our gram <==> mole conversion factor with stem:[C] (for 'conversion factor')
+
+stem:[99 \space mg/dL = (99 \div 10^{-1}) ÷ C \space mmol/L]
+
+This looks confusing, but let me break it down. +
+I'll start with the parenthesis first: stem:[(99 \div 10^{-1})]
+
+We need to convert from deci-liters to liters, so we are dividing by the deci- conversion factor. +
+This effectively gives the value in mg/L, which is stem:[990 \space mg/L].
+
+The next step is to convert from (milli)grams to (milli)moles, which is what stem:[C] is for. +
+Remember that stem:[C] is measured in stem:[C] grams per mole, so if we have grams and we want to get how many moles makes up our number of grams, we use division: stem:[990 \div C]
+
+stem:[C]'s exact value (explained at the start of this comment) is stem:[180.156], so replacing stem:[C] with that makes the equation: stem:[990 \div 180.156]
+
+And with that, my calculator gives me approximately stem:[5.49] as the result.
+We measure mmol/L for blood glucose with one decimal place, so rounding the result gives us stem:[5.5 \space mmol/L] as the final result.
+Confirming this with an online calculator for blood glucose confirms our answer, which means we have successfully converted glucose units!
+
+And to make a equation for our process, we can plug in the value of stem:[C] (it was only there to reduce the amount of numbers in the equation at first glance) and replace our mg/dL value with a variable, such as stem:[G]: +
+stem:[G \space mg/dL = (G \div 10^{-1}) \div 180.156 \space mmol/L]
+
+== Simplifying
+
+We're not done though.
+As nice as it seems, we're having to do quite a bit of work to convert measurement units.
+We can simplify the equation by combining the division steps into one.
+
+To do this, multiply the stem:[10^{-1}] and stem:[180.156] together. +
+The result of this is stem:[18.0156], which may look familiar.
+This becomes our new value to divide by when converting from mg/dL to mmol/L.
+
+For converting from mmol/L to mg/dL, we just need to switch from division to multiplication.
+Again, our conversion factor of stem:[180.156] is how many grams makes up one mole, so if we want to get how many grams is in a number of moles, we multiply by that grams/mole factor instead of dividing by it.
+
+Finally, we come to the final equation: +
+stem:[G \space mg/dL = G \div 18.0156 \space mmol/L]
+
+And lastly, for mmol/L to mg/dL (with stem:[M] representing our mmol/L value): +
+stem:[M \space mmol/L = M \times 18.0156 \space mg/dL]

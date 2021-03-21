@@ -1,0 +1,12 @@
+name: diabetes
+title: Diabetes Wiki
+version: latest
+display_version: current
+asciidoc:
+  attributes:
+    source-language: asciidoc@
+    xrefstyle: short@
+    listing-caption: Example@
+nav:
+  - modules/comparison/nav.adoc
+  - modules/measurement/nav.adoc

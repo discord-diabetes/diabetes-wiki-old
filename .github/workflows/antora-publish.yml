@@ -1,0 +1,16 @@
+name: Inform Antora repo on push
+on: push
+
+jobs:
+  build:
+    name: Dispatch to Antora repo
+    runs-on: ubuntu-latest
+    steps:
+      - name: Emit repository_dispatch
+        uses: mvasigh/dispatch-action@main
+        with:
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          # this will need to be changed if the antora repository is not under gh pages
+          repo: ${{ github.repository_owner }}.github.io
+          owner: ${{ github.repository_owner }}
+          event_type: build_publish
