@@ -10,3 +10,4 @@ asciidoc:
 nav:
   - modules/comparison/nav.adoc
   - modules/measurement/nav.adoc
+  - modules/test-module/nav.adoc

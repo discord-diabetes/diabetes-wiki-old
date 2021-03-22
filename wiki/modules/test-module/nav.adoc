@@ -1,0 +1,2 @@
+* Test section
+** xref:test.adoc[testing haha]
